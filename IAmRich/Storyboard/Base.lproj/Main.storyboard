@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IAmRich" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ruby" translatesAutoresizingMaskIntoConstraints="NO" id="eva-2q-pXN">
+                                <rect key="frame" x="16" y="316.66666666666669" width="343" height="179"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foy-Sj-1Ux">
+                                <rect key="frame" x="165" y="611.66666666666663" width="45" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="More">
+                                    <color key="titleColor" red="0.82432452492816999" green="0.83020207072658447" blue="0.84783470812182737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B7K-Fk-sKg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Am Rich" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7c-EW-NU5">
+                                <rect key="frame" x="113.66666666666669" y="211" width="148" height="40.666666666666657"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <color key="textColor" red="0.90980392160000001" green="0.91372549020000005" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23860517257184055" green="0.0" blue="0.31634676395939088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eva-2q-pXN" firstAttribute="top" secondItem="o7c-EW-NU5" secondAttribute="bottom" constant="65" id="5Ys-eQ-Oyf"/>
+                            <constraint firstItem="eva-2q-pXN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="EEl-tE-fRS"/>
+                            <constraint firstItem="foy-Sj-1Ux" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fSp-q8-4nV"/>
+                            <constraint firstItem="eva-2q-pXN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iay-F5-71X"/>
+                            <constraint firstItem="o7c-EW-NU5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j9S-LH-SjK"/>
+                            <constraint firstItem="foy-Sj-1Ux" firstAttribute="top" secondItem="eva-2q-pXN" secondAttribute="bottom" constant="116.33" id="lPr-B1-njc"/>
+                            <constraint firstItem="eva-2q-pXN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lk0-6u-LD5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eva-2q-pXN" secondAttribute="trailing" constant="16" id="rny-Hu-4Or"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="eva-2q-pXN" id="fNg-Jn-RJ2"/>
+                        <outlet property="textLabel" destination="o7c-EW-NU5" id="EUH-Aa-zzP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.799999999999997" y="20.689655172413794"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ruby" width="210.73170471191406" height="179.1219482421875"/>
+    </resources>
+</document>

@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		AC6D2B0C21386FA600C9BBDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D2B0B21386FA600C9BBDE /* AppDelegate.swift */; };
-		AC6D2B0E21386FA600C9BBDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D2B0D21386FA600C9BBDE /* ViewController.swift */; };
 		AC6D2B1121386FA600C9BBDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC6D2B0F21386FA600C9BBDE /* Main.storyboard */; };
 		AC6D2B1321386FA800C9BBDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6D2B1221386FA800C9BBDE /* Assets.xcassets */; };
 		AC6D2B1621386FA800C9BBDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC6D2B1421386FA800C9BBDE /* LaunchScreen.storyboard */; };
+		ACB662782140717F00224AF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB662772140717F00224AF4 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC6D2B0821386FA600C9BBDE /* IAmRich.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IAmRich.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6D2B0B21386FA600C9BBDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC6D2B0D21386FA600C9BBDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC6D2B1021386FA600C9BBDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC6D2B1221386FA800C9BBDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC6D2B1521386FA800C9BBDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC6D2B1721386FA800C9BBDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACB662772140717F00224AF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +55,29 @@
 			isa = PBXGroup;
 			children = (
 				AC6D2B0B21386FA600C9BBDE /* AppDelegate.swift */,
-				AC6D2B0D21386FA600C9BBDE /* ViewController.swift */,
-				AC6D2B0F21386FA600C9BBDE /* Main.storyboard */,
+				ACADCDD82139D1F4004489DB /* Controller */,
+				ACADCDD72139D1D4004489DB /* Storyboard */,
 				AC6D2B1221386FA800C9BBDE /* Assets.xcassets */,
-				AC6D2B1421386FA800C9BBDE /* LaunchScreen.storyboard */,
 				AC6D2B1721386FA800C9BBDE /* Info.plist */,
 			);
 			path = IAmRich;
+			sourceTree = "<group>";
+		};
+		ACADCDD72139D1D4004489DB /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				AC6D2B0F21386FA600C9BBDE /* Main.storyboard */,
+				AC6D2B1421386FA800C9BBDE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		ACADCDD82139D1F4004489DB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ACB662772140717F00224AF4 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC6D2B0E21386FA600C9BBDE /* ViewController.swift in Sources */,
+				ACB662782140717F00224AF4 /* ViewController.swift in Sources */,
 				AC6D2B0C21386FA600C9BBDE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +301,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LX4P693W2D;
 				INFOPLIST_FILE = IAmRich/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +320,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LX4P693W2D;
 				INFOPLIST_FILE = IAmRich/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
